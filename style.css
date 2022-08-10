@@ -7,6 +7,8 @@
 body
 {
     background-color: #008148;
+    height: 100vh;
+    width: 100vw;
 }
 header
 {
@@ -17,7 +19,7 @@ header
 }
 main
 {
-    height: 550px;
+    height: 450px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -38,15 +40,30 @@ div#main-txt
     height: 200px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
 }
-div#main-txt p
+div#main-txt :first-child
 {
     color: white;
     font-family: "Arial", sans-serif;
-    font-size: 1.25em;
+    font-size: 1.15em;
     font-weight: 500;
+    display: block;
+    text-align: center;
+    
+    
 }
+div#main-txt :last-child
+{
+    color: white;
+    font-family: "Arial", sans-serif;
+    font-size: 1.15em;
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+}
+/*
 a
 {
     width: 230px;
@@ -68,16 +85,20 @@ a:hover
 {
     box-shadow: 1px 1px 7px black;
 }
+*/
+/*
 #main-txt span
 {
     margin: 5px;
     display: block;
     text-align: center;
+    border: 1px solid red;
     
 }
+*/
 footer
 {
-    height: 80px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
